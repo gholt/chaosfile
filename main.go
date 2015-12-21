@@ -5,9 +5,11 @@ import (
 	"math/rand"
 	"os"
 	"strconv"
+	"time"
 )
 
 func main() {
+	rand.Seed(time.Now().UnixNano())
 	if len(os.Args) < 4 {
 		fmt.Printf("Syntax: %s <path> <offset> <length>\n", os.Args[0])
 		fmt.Printf("This will write <length> random bytes at the <offset> given in the file at the <path> given.\n")
