@@ -21,7 +21,7 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	length, err := strconv.ParseInt(os.Args[2], 10, 64)
+	length, err := strconv.ParseInt(os.Args[3], 10, 64)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
